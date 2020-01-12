@@ -32,11 +32,22 @@ The above script will return the Book Rating, Books, Book Readers and RentBook m
 from API thru request modules. The module would also log all the above contents into
 a log file located at src/logs directory
 
-## Unit Test for the app
+# Unit Test for the app
 ## Run following command in the tests dir while the app is running
 
 cd src/tests
+
 pytest test_BooksProject.py
+
+cd BookStore/Books
+
+pytest tests.py
+
+cd BookStore/Books/tests
+
+pytest test_models.py
+
+
 
 # Here is a snapshot of the GET AND POST API calls based on the requirement.
 
