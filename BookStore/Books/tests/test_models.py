@@ -1,9 +1,6 @@
 import sys,os,datetime
-from pathlib import Path
-_projectDir = Path(__file__).resolve().parents[1]
-sys.path.append(os.path.join(_projectDir))
 from django.test import TestCase
-from models import BookRating
+from ..models import BookRating
 
 
 class BookRatingTest(TestCase):

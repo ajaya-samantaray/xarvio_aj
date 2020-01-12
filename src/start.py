@@ -68,20 +68,4 @@ logging.info(_rentedBooksJson)
 print(_rentedBooksJson)
 print("\n")
 
-# Updated RentedBooks for a book (book id =3 ) thru API
-print("#############################################################################")
-print("#################### Updated Rented Book record #############################")
-print("#############################################################################")
-logging.info('Starting request to API to update Rented Book')
-updatedRentedBook = {'url': 'http://localhost:8000/rentbook/3/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-03-01'}
-apiRentedBooksUrl=settings['apiUrl']+'rentbook/'
-
-# Lets first update the book 3 rental record
-api.postRequest(apiRentedBooksUrl,updatedRentedBook)
-
-#Now pull the latest rented book list
-logging.info('Starting request to API to updated Rented Book list')
-_rentedBooksJson = api.getRequest(apiRentedBooksUrl)
-logging.info(_rentedBooksJson)
-print(_rentedBooksJson)
 
