@@ -1,5 +1,7 @@
 ## This is a very simple application
 ## The app creates API for a simple Book store with books, its associated readers etc
+## The app does some extra validation to check If the ISBN entries are valid and also ensures that the return date of the
+## book is always greater than the borrow date.
 
 
 ## First clone the repository to your local host
@@ -22,7 +24,7 @@ python manage.py loaddata Books/fixtures/BookStore.json
 
 python manage.py runserver
 
-## Once the app server is running, go to the src directory where all modules are stored
+## Once the app server is running, go to the src directory (xarvio_aj/src) where all modules are stored
 Run following command to see the Books and their readers
 
 python start.py
@@ -31,6 +33,11 @@ The above script will return the Book Rating, Books, Book Readers and RentBook m
 from API thru request modules. The module would also log all the above contents into
 a log file located at src/logs directory
 
+## Unit Test for the app
+## Run following command in the tests dir while the app is running
+
+cd src/tests
+pytest test_BooksProject.py
 
 # Here is a snapshot of the GET AND POST API calls based on the requirement.
 
@@ -63,9 +70,5 @@ PS C:\Users\Ajaya\GitProjects\Test\xarvio_aj\src> python start.py
 [{'url': 'http://localhost:8000/rentbook/1/', 'Book': 1, 'Reader': 1, 'BorrowDate': '2019-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/2/', 'Book': 2, 'Reader': 2, 'BorrowDate': '2020-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/3/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': None}]
 
 
-## Unit Test for the app
-## Run following command in the tests dir while the app is running
 
-cd src/tests
-pytest test_BooksProject.py
 
