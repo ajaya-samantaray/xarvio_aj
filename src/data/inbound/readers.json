@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Mr. Book Reader",
+        "Address": "London",
+        "RegistrationDate": "2019-01-01",
+        "IsActive": "Y",
+        "ValidFrom": "2019-01-01",
+        "ValidDate": "2030-12-31"
+    },
+	    {
+        "Name": "Mr. Thomas Reed ",
+        "Address": "Germany",
+        "RegistrationDate": "2019-01-01",
+        "IsActive": "Y",
+        "ValidFrom": "2019-01-01",
+        "ValidDate": "2030-12-31"
+    },
+	    {
+        "Name": "Mr. Ajaya Samantaray",
+        "Address": "London",
+        "RegistrationDate": "2019-01-01",
+        "IsActive": "Y",
+        "ValidFrom": "2019-01-01",
+        "ValidDate": "2030-12-31"
+    }
+]

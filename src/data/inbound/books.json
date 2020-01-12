@@ -1,0 +1,20 @@
+[
+    {
+        "ISBN": "978-316-198-1",
+        "TitleName": "CATS ARE DOGS",
+        "AuthorName": "Mr. Book Writer",
+        "Rating" : 5
+    },
+    {
+        "ISBN": "978-316-198-2",
+        "TitleName": "Life is Beutiful",
+        "AuthorName": "Mr Jerry Brooks",
+        "Rating" : 5
+    },
+    {
+        "ISBN": "978-316-198-3",
+        "TitleName": "Limit is sky",
+        "AuthorName": "Ms Samanta Kour",
+        "Rating" : 4
+    }
+]

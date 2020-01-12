@@ -1,0 +1,6 @@
+{
+  "LogDir": "logs",
+  "apiUrl": "http://localhost:8000/",
+  "booksFile":"data/inbound/books.json",
+  "readersFile":"data/inbound/readers.json"
+}

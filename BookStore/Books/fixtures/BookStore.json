@@ -1,0 +1,16 @@
+[
+{"model": "Books.BookRating", "RatingID": 1, "fields": {"Desc": "Poor"}},
+{"model": "Books.BookRating", "RatingID": 2, "fields": {"Desc": "Average"}},
+{"model": "Books.BookRating", "RatingID": 3, "fields": {"Desc": "Good"}},
+{"model": "Books.BookRating", "RatingID": 4, "fields": {"Desc": "Excellent"}},
+{"model": "Books.BookRating", "RatingID": 5, "fields": {"Desc": "Outstanding"}},
+{"model": "Books.book", "pk": 1, "fields": {"ISBN": "978-300-198-1", "TitleName": "My First Book", "AuthorName": "Mr. Ram Samantaray","Rating": 5}},
+{"model": "Books.book", "pk": 2, "fields": {"ISBN": "978-316-199-1", "TitleName": "My Second Book", "AuthorName": "Mr. Tom Cruse","Rating": 5}},
+{"model": "Books.book", "pk": 3, "fields": {"ISBN": "978-316-199-2", "TitleName": "My Third Book", "AuthorName": "Ms. Samanta Cruz","Rating": 4}},
+{"model": "Books.bookreader", "pk": 1, "fields": {"Name": "Mr. Sunil Lamba", "Address": "London", "RegistrationDate": "2010-01-01", "IsActive": "Y", "ValidFrom": "2010-01-01", "ValidDate": "2030-12-31"}},
+{"model": "Books.bookreader", "pk": 2, "fields": {"Name": "Mr. Sachin Tendulkar", "Address": "New Delhi", "RegistrationDate": "2011-01-01", "IsActive": "Y", "ValidFrom": "2011-01-01", "ValidDate": "2030-12-31"}},
+{"model": "Books.bookreader", "pk": 3, "fields": {"Name": "Mr. MS Dhoni", "Address": "Berlin", "RegistrationDate": "2012-01-01", "IsActive": "Y", "ValidFrom": "2011-01-01", "ValidDate": "2030-12-31"}},
+{"model": "Books.rentbooks", "pk": 1, "fields": {"Book": 1, "Reader": 1, "BorrowDate": "2019-01-01", "ReturnDate": null}},
+{"model": "Books.rentbooks", "pk": 2, "fields": {"Book": 2, "Reader": 2, "BorrowDate": "2020-01-01", "ReturnDate": null}},
+{"model": "Books.rentbooks", "pk": 3, "fields": {"Book": 3, "Reader": 3, "BorrowDate": "2018-01-01", "ReturnDate": null}}
+]

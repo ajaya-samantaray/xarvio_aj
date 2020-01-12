@@ -1,0 +1,46 @@
+2020-01-12 18:50:38,415 : INFO - No environment supplied. Hence defaulting to dev
+2020-01-12 18:50:38,415 : INFO - Starting request to API to get list of books
+2020-01-12 18:50:38,415 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 18:50:40,521 : DEBUG - http://localhost:8000 "GET /books/ HTTP/1.1" 200 373
+2020-01-12 18:50:40,530 : INFO - [{'url': 'http://localhost:8000/books/1/', 'ISBN': '978-300-198-1', 'TitleName': 'My First Book', 'AuthorName': 'Mr. Ram Samantaray'}, {'url': 'http://localhost:8000/books/2/', 'ISBN': '978-316-199-1', 'TitleName': 'My Second Book', 'AuthorName': 'Mr. Tom Cruse'}, {'url': 'http://localhost:8000/books/3/', 'ISBN': '978-316-199-2', 'TitleName': 'My Third Book', 'AuthorName': 'Ms. Samanta Cruz'}]
+2020-01-12 18:50:40,552 : INFO - Starting request to API to get list of Readers
+2020-01-12 18:50:40,556 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 18:50:42,608 : DEBUG - http://localhost:8000 "GET /reader/ HTTP/1.1" 200 555
+2020-01-12 18:50:42,611 : INFO - [{'url': 'http://localhost:8000/reader/1/', 'Name': 'Mr. Sunil Lamba', 'Address': 'London', 'RegistrationDate': '2010-01-01', 'IsActive': 'Y', 'ValidFrom': '2010-01-01', 'ValidDate': '2030-12-31'}, {'url': 'http://localhost:8000/reader/2/', 'Name': 'Mr. Sachin Tendulkar', 'Address': 'New Delhi', 'RegistrationDate': '2011-01-01', 'IsActive': 'Y', 'ValidFrom': '2011-01-01', 'ValidDate': '2030-12-31'}, {'url': 'http://localhost:8000/reader/3/', 'Name': 'Mr. MS Dhoni', 'Address': 'Berlin', 'RegistrationDate': '2012-01-01', 'IsActive': 'Y', 'ValidFrom': '2011-01-01', 'ValidDate': '2030-12-31'}]
+2020-01-12 18:50:42,615 : INFO - Starting request to API to get list of Rented Books
+2020-01-12 18:50:42,630 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 18:50:44,659 : DEBUG - http://localhost:8000 "GET /rentbook/ HTTP/1.1" 200 673
+2020-01-12 18:50:44,661 : INFO - [{'url': 'http://localhost:8000/rentbook/1/', 'Book': 1, 'Reader': 1, 'BorrowDate': '2019-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/2/', 'Book': 2, 'Reader': 2, 'BorrowDate': '2020-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/3/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/4/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-02-01'}, {'url': 'http://localhost:8000/rentbook/5/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-02-01'}, {'url': 'http://localhost:8000/rentbook/6/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-03-01'}]
+2020-01-12 18:50:44,667 : INFO - Starting request to API to update Rented Book
+2020-01-12 18:50:44,673 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 18:50:46,716 : DEBUG - http://localhost:8000 "POST /rentbook/ HTTP/1.1" 201 115
+2020-01-12 18:50:46,718 : ERROR - Error retrieving data from API, status :  Response Code: 201
+2020-01-12 18:50:46,719 : INFO - Starting request to API to updated Rented Book list
+2020-01-12 18:50:46,722 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 18:50:48,750 : DEBUG - http://localhost:8000 "GET /rentbook/ HTTP/1.1" 200 789
+2020-01-12 18:50:48,752 : INFO - [{'url': 'http://localhost:8000/rentbook/1/', 'Book': 1, 'Reader': 1, 'BorrowDate': '2019-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/2/', 'Book': 2, 'Reader': 2, 'BorrowDate': '2020-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/3/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/4/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-02-01'}, {'url': 'http://localhost:8000/rentbook/5/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-02-01'}, {'url': 'http://localhost:8000/rentbook/6/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-03-01'}, {'url': 'http://localhost:8000/rentbook/7/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-03-01'}]
+2020-01-12 20:20:49,771 : INFO - No environment supplied. Hence defaulting to dev
+2020-01-12 20:20:49,775 : INFO - Starting request to API to get list of ratings
+2020-01-12 20:20:49,785 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 20:20:51,822 : DEBUG - http://localhost:8000 "GET /bookrating/ HTTP/1.1" 200 161
+2020-01-12 20:20:51,824 : INFO - [{'RatingID': 1, 'Desc': 'Poor'}, {'RatingID': 2, 'Desc': 'Average'}, {'RatingID': 3, 'Desc': 'Good'}, {'RatingID': 4, 'Desc': 'Excellent'}, {'RatingID': 5, 'Desc': 'Outstanding'}]
+2020-01-12 20:20:51,829 : INFO - Starting request to API to get list of books
+2020-01-12 20:20:51,841 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 20:20:53,864 : DEBUG - http://localhost:8000 "GET /books/ HTTP/1.1" 200 406
+2020-01-12 20:20:53,866 : INFO - [{'url': 'http://localhost:8000/books/1/', 'ISBN': '978-300-198-1', 'TitleName': 'My First Book', 'AuthorName': 'Mr. Ram Samantaray', 'Rating': 5}, {'url': 'http://localhost:8000/books/2/', 'ISBN': '978-316-199-1', 'TitleName': 'My Second Book', 'AuthorName': 'Mr. Tom Cruse', 'Rating': 5}, {'url': 'http://localhost:8000/books/3/', 'ISBN': '978-316-199-2', 'TitleName': 'My Third Book', 'AuthorName': 'Ms. Samanta Cruz', 'Rating': 4}]
+2020-01-12 20:20:53,873 : INFO - Starting request to API to get list of Readers
+2020-01-12 20:20:53,882 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 20:20:55,909 : DEBUG - http://localhost:8000 "GET /reader/ HTTP/1.1" 200 555
+2020-01-12 20:20:55,911 : INFO - [{'url': 'http://localhost:8000/reader/1/', 'Name': 'Mr. Sunil Lamba', 'Address': 'London', 'RegistrationDate': '2010-01-01', 'IsActive': 'Y', 'ValidFrom': '2010-01-01', 'ValidDate': '2030-12-31'}, {'url': 'http://localhost:8000/reader/2/', 'Name': 'Mr. Sachin Tendulkar', 'Address': 'New Delhi', 'RegistrationDate': '2011-01-01', 'IsActive': 'Y', 'ValidFrom': '2011-01-01', 'ValidDate': '2030-12-31'}, {'url': 'http://localhost:8000/reader/3/', 'Name': 'Mr. MS Dhoni', 'Address': 'Berlin', 'RegistrationDate': '2012-01-01', 'IsActive': 'Y', 'ValidFrom': '2011-01-01', 'ValidDate': '2030-12-31'}]
+2020-01-12 20:20:55,916 : INFO - Starting request to API to get list of Rented Books
+2020-01-12 20:20:55,923 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 20:20:57,957 : DEBUG - http://localhost:8000 "GET /rentbook/ HTTP/1.1" 200 325
+2020-01-12 20:20:57,959 : INFO - [{'url': 'http://localhost:8000/rentbook/1/', 'Book': 1, 'Reader': 1, 'BorrowDate': '2019-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/2/', 'Book': 2, 'Reader': 2, 'BorrowDate': '2020-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/3/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': None}]
+2020-01-12 20:20:57,965 : INFO - Starting request to API to update Rented Book
+2020-01-12 20:20:57,971 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 20:21:00,044 : DEBUG - http://localhost:8000 "POST /rentbook/ HTTP/1.1" 201 115
+2020-01-12 20:21:00,046 : ERROR - Error retrieving data from API, status :  Response Code: 201
+2020-01-12 20:21:00,046 : INFO - Starting request to API to updated Rented Book list
+2020-01-12 20:21:00,053 : DEBUG - Starting new HTTP connection (1): localhost:8000
+2020-01-12 20:21:02,078 : DEBUG - http://localhost:8000 "GET /rentbook/ HTTP/1.1" 200 441
+2020-01-12 20:21:02,080 : INFO - [{'url': 'http://localhost:8000/rentbook/1/', 'Book': 1, 'Reader': 1, 'BorrowDate': '2019-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/2/', 'Book': 2, 'Reader': 2, 'BorrowDate': '2020-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/3/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': None}, {'url': 'http://localhost:8000/rentbook/4/', 'Book': 3, 'Reader': 3, 'BorrowDate': '2018-01-01', 'ReturnDate': '2018-03-01'}]
