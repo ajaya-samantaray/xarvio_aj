@@ -1,7 +1,6 @@
 ## This is a very simple application
 ## The app creates API for a simple Book store with books, its associated readers etc
-## The app does some extra validation to check If the ISBN entries are valid and also ensures that the return date of the
-## book is always greater than the borrow date.
+## The app does some extra validation to check If the ISBN entries are valid and also ensures that the return date of the book is always greater than the borrow date.
 
 
 ## First clone the repository to your local host
